@@ -143,7 +143,7 @@ gitGraph LR:
     switch main
     merge "bugfix/1" tag: "v0.1.0-beta2"
     commit tag: "v0.1.0"
-    commit``mermaid
+    commit
 ```
 
 ## trunk-based-hotfix-flow
