@@ -80,8 +80,14 @@ gitGraph LR:
     branch "release/0.2"
     commit
     commit tag: "v0.2.0-alpha"
+    checkout "release/0.1"
+    commit
     checkout main
     merge "release/0.1" tag: "v0.1.0"
+    checkout "release/0.2"
+    commit
+    checkout main
+    merge "release/0.2" tag: "v0.2.0"
     commit
 ```
 ```
