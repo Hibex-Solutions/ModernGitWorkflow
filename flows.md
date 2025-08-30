@@ -55,6 +55,12 @@ gitGraph LR:
     commit
 ```
 
+Regras:
+
+- Quando há uma versão sendo estabilizada nenhum commit na branch
+  principal é permitido
+- As tags de versão são sempre em _commits_ da branch principal (_main_).
+
 ## incremental-release-flow
 
 > Este fluxo é uma extensão de `stable-release-flow`.
