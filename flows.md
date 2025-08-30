@@ -113,4 +113,51 @@ Regras:
 - As tags de versão são sempre em _commits_ da branch de _release_.
 - Qualquer commit na branch principal (_main_) é considerado pertencente
   a próxima versão
+
+
+## topic-branch-flow
+
+Baseado no trunk-based-flow onde apenas os commits não são feitos
+diretamente na branch principal.
+
+As tags continuam sendo geradas igualmente.
+
+```mermaid
+---
+config:
+  theme: 'neutral'
+---
+gitGraph LR:
+    commit id: "Initial commit"
+    branch "feature/A"
+    commit
+    switch main
+    merge "feature/A" tag: "v0.1.0-alpha1"
+    branch "feature/B"
+    commit
+    switch main
+    merge "feature/B" tag: "v0.1.0-alpha2"
+    commit tag: "v0.1.0-beta1"
+    branch "bugfix/1"
+    commit
+    switch main
+    merge "bugfix/1" tag: "v0.1.0-beta2"
+    commit tag: "v0.1.0"
+    commit``mermaid
 ```
+
+## trunk-based-hotfix-flow
+
+Uma branch de correção é feita à partir de um commit de tag e corrigido.
+Uma outra tag é feita à partir dessa branch, que é reintegrada a branch
+principal.
+
+Cherry-pick é usado para aplicar a correção a possíveis versões maiores
+quando necessário.
+
+## topic-stable-release-flow
+
+Baseado em `stable-release-flow` mas com acréscimo da mudança imposta
+a `trunk-based-flow` por `topc-branch-flow`. Também as correções neutral
+release não são feitas diretamente, mas por tópicos de `bugfix/*`.
+
