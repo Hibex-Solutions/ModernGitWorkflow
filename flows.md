@@ -16,21 +16,24 @@ liberado como uma versão (estável ou não), se cria uma tag diretamente.
 config:
     theme: 'neutral'
 ---
-gitGraph LR:
-    commit
+gitGraph TB:
     commit
     commit tag: "v0.1.0-alpha"
     commit
-    commit 
     commit tag: "v0.1.0-beta"
     commit tag: "v0.1.0-rc"
     commit tag: "v0.1.0"
     commit tag: "v0.1.1"
     commit
-    commit
 ```
 
-<!-- TODO --
+## Stable release
+
+Este fluxo considera o _thunk-based_ como escolha, e quando se deseja
+liberar uma versão, então criamos uma branch para estabilizá-la.
+Onde testes são feitos e possíveis correções de estabilização da
+versão são aplicáveis.
+
 ```mermaid
 ---
 config:
@@ -51,4 +54,3 @@ gitGraph LR:
     merge "release/0.1" tag: "v0.1.0"
     commit
 ```
--->
