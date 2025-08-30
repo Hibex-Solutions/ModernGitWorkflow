@@ -5,7 +5,7 @@ Algumas pré-considerações:
 - A branch principal se chama `main`
 - Toda tag de versão é prefixada com `v`. Ex: `v0.1.0`
 
-## simple-trunk-based-flow
+## trunk-based-flow
 
 O desenvolvimento simples baseado no tronco prevê que tudo é feito
 na branch principal, e sempre que se considera algo que possa ser
