@@ -95,7 +95,9 @@ gitGraph LR:
 ```
 ```
 
-Regras:
+
+### Regras:
+
 - Não se pode liberar uma versão final qualquer enquanto houver outra
   outra menor em aberto. Ex: Não se libera uma `release/0.2` enquanto
   uma `release/0.1` existir.
