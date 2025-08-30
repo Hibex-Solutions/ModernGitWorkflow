@@ -29,11 +29,21 @@ bastante _a sardinha para suas brasas_. Normalmente acabam vinculando o fluxo
 
 O que quero aqui é propor um fluxo que considere as vantagens do [Gitflow][gitflow],
 mas também considere cenários modernos do desenvolvimento de software, e que
-abstraia a parte de gestão de projeto ou problemas, e quaisquer outras
-ferramentas que possam ser usadas, sem deixar o fluxo pesado.
+abstraia a parte de gestão de projeto ou problemas, sem _puxar a sardinha_
+para quaisquer que sejam as ferramentas que venham a ser usadas.
 
 > Como cenários modernos queremos citar: integração contínua, liberação
-> contínua e entrega contínua.
+> contínua, implantação contínua, entrega contínua, _containers_ e [SemVer][semver].
+
+Portanto, eis aqui nossos objetivos:
+
+- Ser compatível com integração contínua
+- Ser compatível com liberação contínua
+- Ser compatível com implantação contínua em múltiplos ambientes
+- Ser compatível com entrega contínua 
+- Ser compatível com desenvolvimento de softwares em _containers_
+- Ser compatível com versionamento semântico [SemVer][semver]
+- Ser compatível com suporte a múltiplas versões
 
 
 <!-- links -->
@@ -44,4 +54,5 @@ ferramentas que possam ser usadas, sem deixar o fluxo pesado.
 [gitlab]: https://about.gitlab.com
 [gitlabflow]: https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/
 [thegitflowproblem]: https://about.gitlab.com/blog/what-is-gitlab-flow/
+[semver]: https://semver.org
 
