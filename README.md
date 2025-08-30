@@ -32,20 +32,18 @@ mas também considere cenários modernos do desenvolvimento de software, e que
 abstraia a parte de gestão de projeto ou problemas, sem _puxar a sardinha_
 para quaisquer que sejam as ferramentas que venham a ser usadas.
 
-> Como cenários modernos queremos citar: integração contínua, liberação
-> contínua, implantação contínua, entrega contínua, _containers_ e [SemVer][semver].
+Portanto, eis aqui nossos 10 objetivos:
 
-Portanto, eis aqui nossos objetivos:
-
-- Ser compatível com integração contínua
-- Ser compatível com liberação contínua
-- Ser compatível com implantação contínua em múltiplos ambientes
-- Ser compatível com entrega contínua 
-- Ser compatível com desenvolvimento de softwares em _containers_
-- Ser compatível com versionamento semântico [SemVer][semver]
-- Ser compatível com suporte a múltiplas versões
-- Ser compatível com _Feature Based Development_
-- Ser compatível com [_Thunk Based Development_][thunkbased]
+1. Ser naturalmente adaptável
+2. Ser compatível com [_Thunk Based Development_][thunkbased]
+3. Ser compatível com _Feature Based Development_
+4. Suportar manutenção de múltiplas versões
+5. Suportar versionamento semântico [SemVer][semver]
+6. Ser compatível com integração contínua
+7. Ser compatível com implantação contínua
+8. Ser compatível com entrega contínua 
+9. Ser compatível com desenvolvimento de softwares em _containers_
+10. Ter uma documentação simples disponível
 
 
 <!-- links -->
