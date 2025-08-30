@@ -44,6 +44,8 @@ Portanto, eis aqui nossos objetivos:
 - Ser compatível com desenvolvimento de softwares em _containers_
 - Ser compatível com versionamento semântico [SemVer][semver]
 - Ser compatível com suporte a múltiplas versões
+- Ser compatível com _Feature Based Development_
+- Ser compatível com [_Thunk Based Development_][thunkbased]
 
 
 <!-- links -->
@@ -55,4 +57,5 @@ Portanto, eis aqui nossos objetivos:
 [gitlabflow]: https://about.gitlab.com/topics/version-control/what-is-gitlab-flow/
 [thegitflowproblem]: https://about.gitlab.com/blog/what-is-gitlab-flow/
 [semver]: https://semver.org
+[thunkbased]: https://trunkbaseddevelopment.com
 
