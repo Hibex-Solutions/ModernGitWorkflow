@@ -5,7 +5,7 @@ Algumas pré-considerações:
 - A branch principal se chama `main`
 - Toda tag de versão é prefixada com `v`. Ex: `v0.1.0`
 
-## Simple trunk-based flow
+## simple-trunk-based-flow
 
 O desenvolvimento simples baseado no tronco prevê que tudo é feito
 na branch principal, e sempre que se considera algo que possa ser
@@ -27,7 +27,7 @@ gitGraph TB:
     commit
 ```
 
-## Stable release
+## stable-release-flow
 
 Este fluxo considera o _thunk-based_ como escolha, e quando se deseja
 liberar uma versão, então criamos uma branch para estabilizá-la.
@@ -53,4 +53,36 @@ gitGraph LR:
     checkout main
     merge "release/0.1" tag: "v0.1.0"
     commit
+```
+
+## incremental-release-flow
+
+> Este fluxo é uma extensão de `stable-release-flow`.
+
+Considera-se que enquanto uma versão está sendo establilizada, uma
+próxima versão pode ser construída em paralelo.
+
+Ideal para times ágeis que entregam incrementos sequenciais.
+
+```mermaid
+---
+config:
+  theme: 'neutral'
+---
+gitGraph LR:
+    commit
+    branch "release/0.1"
+    commit
+    commit tag: "v0.1.0-rc"
+    checkout main
+    commit
+    commit
+    branch "release/0.2"
+    commit
+    commit tag: "v0.2.0-alpha"
+    checkout main
+    merge "release/0.1" tag: "v0.1.0"
+    commit
+```
+```
 ```
