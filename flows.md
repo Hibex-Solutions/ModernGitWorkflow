@@ -93,10 +93,9 @@ gitGraph LR:
     switch main
     commit
 ```
-```
 
 
-### Regras:
+Regras:
 
 - Não se pode liberar uma versão final qualquer enquanto houver outra
   outra menor em aberto. Ex: Não se libera uma `release/0.2` enquanto
