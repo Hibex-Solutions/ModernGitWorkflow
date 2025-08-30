@@ -16,7 +16,7 @@ liberado como uma versão (estável ou não), se cria uma tag diretamente.
 config:
     theme: 'neutral'
 ---
-gitGraph TB:
+gitGraph LR:
     commit
     commit tag: "v0.1.0-alpha"
     commit
@@ -111,4 +111,6 @@ Regras:
   `release/0.2` existir, após liberação, `main` deve ser juntada a 
   `release/0.2` (_merge_). 
 - As tags de versão são sempre em _commits_ da branch de _release_.
+- Qualquer commit na branch principal (_main_) é considerado pertencente
+  a próxima versão
 ```
