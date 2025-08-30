@@ -37,6 +37,7 @@ ferramentas que possam ser usadas, sem deixar o fluxo pesado.
 
 
 <!-- links -->
+[git]: https://git-scm.com
 [gitflow]: https://danielkummer.github.io/git-flow-cheatsheet/
 [github]: https://github.com/about
 [githubflow]: https://docs.github.com/en/get-started/using-github/github-flow
