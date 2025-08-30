@@ -1,7 +1,7 @@
 # Modern Git Workflow
 
 > Modern Git Workflow - A Simpler Way to Release Your Software
-> Git Workflow Moderno - Uma maneira mais simples de lançar seu software.
+>> Git Workflow Moderno - Uma maneira mais simples de lançar seu software.
 
 Tenho trabalhado a um tempo com vários fluxos Git para entrega de software
 dos mais variados sabores. Mas em essência, são alguma variação do famoso
