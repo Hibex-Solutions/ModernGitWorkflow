@@ -45,6 +45,8 @@ Portanto, eis aqui nossos 10 objetivos:
 9. Ser compatível com desenvolvimento de softwares em _containers_
 10. Ter uma documentação simples disponível
 
+[Conheça cada fluxo aqui!](flows.md)
+
 
 <!-- links -->
 [git]: https://git-scm.com
